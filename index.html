@@ -5,24 +5,142 @@
     <title>CSS Snippet Cheatsheet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
 
   <body>
     <header>
       <h1>CSS Snippet Cheatsheet</h1>
+      <p>Ever have trouble recalling the exact syntax of your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
     <main>
-      <section>
-        <h2>Flexbox Row</h2>
-        <p>.row {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }
-        </p>
+
+    <!--Card #1-->
+      <section class="card">
+        <div class="title">
+            <h2>Flexbox Row</h2>
+        </div>
+        <p>Use these three properties to create a Flexbox row layout.</p>
+        <div class ="content">
+<pre>
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+</pre>
+        </div>
       </section>
+
+    <!--Card #2-->
+    <section class="card">
+      <div class="title">
+          <h2>Flexbox Column</h2>
+      </div>
+      <p>Use this to create a Flexbox column layout.</p>
+      <div class ="content">
+<pre>
+.column {
+  display: flex;
+  flex-direction: column;
+}
+</pre>
+      </div>
+    </section>
+
+    <!--Card #3-->
+    <section class="card">
+      <div class="title">
+          <h2>CSS Grid Layout</h2>
+      </div>
+      <p>Build a 12-column layout using CSS Grid</p>
+      <div class ="content">
+<pre>
+.grid{
+  display: grid;
+  width: 100%;
+  grid-template-columns:
+repeat(12, 1fr);
+}
+</pre>
+      </div>
+    </section>
+
+    <!--Card #4-->
+    <section class="card">
+      <div class="title">
+          <h2>Linear Gradients</h2>
+      </div>
+      <p>This will create a backgroun linear gradient from top to bottom.</p>
+      <div class ="content">
+        <pre>
+.linear-gradient-background {
+  background-image: linear-
+gradient(
+    rgba(232, 102, 236, 0.3) 0%
+    rgba(232, 102, 236, 0.6)
+100%
+  );
+}
+        </pre>
+      </div>
+    </section>
+
+    <!--Card #5-->
+    <section class="card">
+      <div class="title">
+          <h2>Box Transition Glow</h2>
+      </div>
+      <p>Use transition and box shadows to glow on hover.</p>
+      <div class ="content">
+<pre>
+.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-
+out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px
+rgba(232, 102, 236, 1), 0 0 15px
+rgba(232, 102, 236, 1);
+}
+</pre>
+      </div>
+    </section>
+
+    <!--Card #6-->
+    <section class="card">
+      <div class="title">
+          <h2>Overlay Card with Title</h2>
+      </div>
+      <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+      <div class ="content">
+        <pre>
+.card-header {
+  position: relative;
+  margin-top: -20px;
+}
+        </pre>
+      </div>
+    </section>
+
+    <!--Card #7-->
+    <section class="card">
+      <div class="title">
+          <h2>Title Here</h2>
+      </div>
+      <p>Description Here</p>
+      <div class ="content">
+<pre>
+Use this as a template to create additional CSS snippets!
+</pre>
+      </div>
+    </section>
+
     </main>
+
     <footer>
       <h2>Made with ❤️ and CSS</h2>
     </footer>
