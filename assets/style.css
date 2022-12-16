@@ -4,16 +4,12 @@
 }
 
 *{
-
 }
-
 
 h1 {
     color: var(--title);
     font-family: Arial, Helvetica, sans-serif;    
 }
-
-
 
 header {
     postion: relative;
@@ -29,6 +25,7 @@ footer {
     text-align: center;
 }
 
+
 /*beginning of CSS Snippet card*/
 .card {
    border: 2px;
@@ -37,6 +34,8 @@ footer {
    padding: 10px;
    margin: 20px;
    transition: all 0.5s ease-in-out;
+   position: relative;
+   flex-direction: center;
 }
 
 .card:hover {
@@ -69,7 +68,7 @@ footer {
 }
 
 .content{
-    background-color: #92529a;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
     border-radius: 5px;
     font-family: monospace;
     color: white;
@@ -80,8 +79,28 @@ footer {
 
 /*end of CSS Snippet card*/
 
-.row { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+/*mobile phone viewing*/
+@media screen and (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*tablet viewing*/
+@media screen and (max-width: 992px){
+    main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/*desktop viewing*/
+@media screen and (min-width: 992px){
+    main{
+        display: grid;
+        width:100%;
+        grid-template-columns:repeat(12, 1fr);
+    }
 }
