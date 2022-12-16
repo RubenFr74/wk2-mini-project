@@ -1,1 +1,73 @@
 
+:root{
+--title: #92529a;
+}
+
+*{
+
+}
+
+
+h1 {
+    color: var(--title);
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+
+header {
+    align:center;
+}
+
+body{
+    background: linear-gradient(#333940, #424a53);
+}
+
+footer {
+    position: relative;
+    align: center;
+}
+
+/*beginning of CSS Snippet card*/
+.card{
+   border: 1px;
+   border-style: dashed;
+   border-color: white;
+   padding: 10px;
+   margin: 20px;
+}
+
+
+.title{
+    align: center;
+}
+
+.title h2 {
+    color: var(--title);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(190, 44, 125);
+}
+
+.content{
+    background-color: #92529a;
+    border-radius: 5px;
+    font-family: monospace;
+    color: white;
+    padding: 2px;
+}
+
+.content li{
+    list-style: none;
+}
+
+/*end of CSS Snippet card*/
+
+.row { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
