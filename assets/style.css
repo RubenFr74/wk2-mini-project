@@ -3,14 +3,6 @@
 --title: #92529a;
 }
 
-*{
-}
-
-h1 {
-    color: var(--title);
-    font-family: Arial, Helvetica, sans-serif;    
-}
-
 header {
     postion: relative;
     text-align: center;
@@ -26,6 +18,17 @@ footer {
     text-align: center;
 }
 
+h1 {
+    color: var(--title);
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
 
 /*beginning of CSS Snippet card*/
 .card {
@@ -33,6 +36,7 @@ footer {
    border-style: dashed;
    border-color: white;
    padding: 10px;
+   width: 275px;
    transition: all 0.5s ease-in-out;
    display: inline-block;
    margin-left: auto;
@@ -45,6 +49,7 @@ footer {
     box-shadow: inset 0px 0px 8px 
     rgba(232, 102, 236, 1), 0 0 15px
     rgba(232, 102, 236, 1);
+    z-index: 2;
 }
 
 .card .title {
@@ -69,12 +74,17 @@ footer {
     border-radius: 10px;
 }
 
+.card p {
+    color: var(--title);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
 .content{
     background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
     border-radius: 5px;
     font-family: monospace;
     color: white;
-    padding: 2px;
+    padding: 4px;
     display: block;
     margin-left: 0px;
     user-select: text;
@@ -85,25 +95,25 @@ footer {
 /*mobile phone viewing*/
 @media screen and (max-width: 768px){
     main{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        width:100%;
+        grid-template-columns:repeat(12, 1fr);
     }
 }
 
 /*tablet viewing*/
 @media screen and (max-width: 992px){
     main{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 /*desktop viewing*/
 @media screen and (min-width: 992px){
     main{
-        display: grid;
-        width:100%;
-        grid-template-columns:repeat(12, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
