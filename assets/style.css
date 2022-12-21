@@ -42,6 +42,7 @@ p {
    margin-left: auto;
    margin-right: auto;
    margin-top: 5px;
+   background: linear-gradient(#333940, #424a53)
 }
 
 .card:hover {
